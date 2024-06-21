@@ -98,3 +98,70 @@
   .modal-footer {
       border: none !important;
   }
+
+  /* Home.html */
+
+  #left-side i {
+      color: #fff;
+      /* font-size: 1.5rem; */
+  }
+
+  #left-side a:hover {
+      background-color: rgba(231, 233, 234, 0.1);
+  }
+
+  main nav button:hover {
+      background-color: rgba(231, 233, 234, 0.1) !important;
+  }
+
+  #post {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+  }
+
+  #post::placeholder {
+      color: rgb(62, 65, 68);
+  }
+
+  #search::placeholder {
+      color: rgb(134, 150, 165);
+      font-size: 1-8rem;
+  }
+
+  #search {
+      color: #fff;
+  }
+
+  .tweet-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+  }
+
+  .tweet-btns a {
+      color: rgb(62, 65, 68);
+      text-decoration: none;
+  }
+
+  #post-attachment a {
+      text-decoration: none;
+  }
+
+  #btn-like:hover {
+      color: #e62965;
+      background-color: #e6296571;
+  }
+
+  #btn-retweet:hover {
+      color: #17bf63;
+      background-color: #17bf6371;
+  }
+
+  #btn-comment:hover,
+  #btn-save:hover,
+  #btn-share:hover,
+  #btn-views:hover {
+      color: #1da1f2;
+      background-color: #1da1f271;
+  }
