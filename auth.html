@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta
+            content="From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+            name="description" data-rh="true">
+    <title>X. It’s what’s happening / X</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/fontawesome-free/css/all.min.css">
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+
+    <!--  JQuery-->
+    <script src="./jQuery/jQuery.js"></script>
+
+</head>
+
+<body class="bg-black text-white">
+<div id="register-alert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+    <strong>Registeration Successfully</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div id="login-alert" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+    <strong>Login Successfully</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<!-- Body -->
+<main class="main-content d-flex align-items-center justify-content-center self-align-center">
+    <div class="row container-fluid mx-5">
+        <!-- Logo -->
+        <div class="col-md-12 col-sm-12 col-lg-6 ">
+            <div class="text-center mx-auto d-bloc w-50 d-none d-lg-block">
+                <img src="./images/logo.png" alt="" class="w-100">
+            </div>
+            <div class=" text-start mb-5 d-bloc w-25 d-lg-none d-block">
+                <img src="./images/logo.png" alt="" class="w-25">
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-12 col-sm-12 col-lg-6 ">
+            <h1 class="display-3 fw-bold mb-5">Happening now</h1>
+            <h3 class="display-7 fw-bold mb-4">Join today.</h3>
+            <!-- Buttons -->
+            <div class="mw-100">
+                <button class="mb-3 btn btn-light w-50 rounded-start-5 rounded-end-5">
+                    <img src="./images/google.png" width="8%" alt="">
+                    &#160;
+                    <span class="fs-6">Sign up with Google</span>
+                </button>
+                <button class="mb-2 btn btn-light w-50 rounded-start-5 rounded-end-5">
+                    <img src="./images/apple.png" width="8%" alt="">
+                    &#160;
+                    <span class="fs-6">Sign up with Apple</span>
+                </button>
+                <!-- Or -->
+                <div class="mb-2 w-50">
+                    <hr class="d-inline-block  align-middle">
+                    <span class="fs-6 align-middle">Or</span>
+                    <hr class="d-inline-block  align-middle">
+                </div>
+                <!-- Create Account Button -->
+                <button class="mb-2 btn btn-primary rounded-start-5 rounded-end-5 w-50 p-2" type="button"
+                        data-bs-toggle="modal" data-bs-target="#registerModal">
+                    <span class="fs-6 fw-bold">Create Account</span>
+                </button>
+                <p class="mb-5 w-50" style="font-size: small;">
+                    By signing up, you agree to the
+                    <a href="">Terms of Service</a>
+                    and
+                    <a href="">
+                        Privacy Policy
+                    </a>
+                    , including
+                    <a href="">
+                        Cookie Use
+                    </a>.
+                </p>
+                <p class="fs-54 fw-bold">
+                    Already have an account?
+                </p>
+                <button class="btn btn-outline-primary rounded-start-5 rounded-end-5 w-50 p-2" type="button"
+                        data-bs-toggle="modal" data-bs-target="#login-modal">
+                    <span class="fs-6 fw-bold">Sign in</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- Register Dialog -->
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <a class="fw-bold" type="button" data-bs-dismiss="modal"
+                   style="background-color: transparent; color: white; text-decoration: none;">X</a>
+                <img src="./images/logo.png" width="8%" class="modal-title mx-auto" />
+            </div>
+            <form id="register-form" action="./home.html">
+
+                <div class="modal-body">
+                    <h3 class="h3 fw-bold">
+                        Create your account
+                    </h3>
+                    <br>
+                    <div class="mb-3 form-group has-feedback">
+                        <input type="text" class="form-control" id="register-name" placeholder="Name">
+                        <div id="register-name-validation" class="form-text text-danger d-none">
+                            Please enter a valid name with more than 3 characters and no numbers and tow words like
+                            Ahmed Mohamed.
+                        </div>
+                    </div>
+                    <div class="mb-3 form-group has-feedback">
+                        <input type="text" class="form-control" id="register-email" placeholder="Email">
+                        <div id="register-email-validation" class="form-text text-danger d-none">
+                            Please enter a valid email with @ and .com
+                        </div>
+                        <div id="register-email-found-validation" class="form-text text-danger d-none">
+                            Email already exists.
+                        </div>
+                    </div>
+                    <div class="mb-3 form-group has-feedback">
+                        <input type="password" class="form-control" id="register-password" placeholder="Password">
+                        <div id="register-password-validation" class="form-text text-danger d-none">
+                            Password must be greater than 5 characters.
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" id="btn-register" class="btn btn-primary" value="Register" />
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Login Dialog -->
+
+<!-- Modal -->
+<div class="modal fade" id="login-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <a class="fw-bold" type="button" data-bs-dismiss="modal"
+                   style="background-color: transparent; color: white; text-decoration: none;">X</a>
+                <img src="./images/logo.png" width="8%" class="modal-title mx-auto" />
+            </div>
+            <form id="login-form" action="./home.html">
+                <div class="modal-body">
+                    <h3 class="h3 fw-bold">
+                        Sign in to X
+                    </h3>
+                    <br>
+                    <div class="mb-3 form-group has-feedback">
+                        <input type="text" class="form-control" id="login-email" placeholder="Email">
+                        <div id="login-email-validation" class="form-text text-danger d-none">
+                            Please enter a valid email with @ and .com
+                        </div>
+                        <div id="login-email-found-validation" class="form-text text-danger d-none">
+                            Email not found.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="login-password" placeholder="Password">
+                        <div id="login-password-validation" class="form-text text-danger d-none">
+                            Password must be greater than 5 characters.
+                        </div>
+                        <div id="login-password-match-validation" class="form-text text-danger d-none">
+                            Password not matched.
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" id="btn-login" class="btn btn-primary" value="Login" />
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="d-flex flex-row flex-wrap justify-content-center text-start">
+        <a href="#">About</a>
+        <a href="#">Download the X app</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Ads info</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Brand Resources</a>
+        <a href="#">Advertising</a>
+        <a href="#">Marketing</a>
+        <a href="#">X for Business</a>
+        <a href="#">Developers</a>
+        <a href="#">Directory</a>
+        <a href="#">Settings</a>
+        <span>© 2024 X Corp.</span>
+    </div>
+</footer>
+
+<script src=" node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="node_modules/fontawesome-free/js/all.min.js"></script>
+<script src="./JS/auth.js"></script>
+</body>
+
+</html>

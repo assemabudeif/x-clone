@@ -4,255 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
     <meta
-        content="From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
-        name="description" data-rh="true">
+            content="From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+            name="description" data-rh="true">
     <title>Home / X</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <!-- Fav Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+
+    <!--  jQuery  -->
+    <script src="./jQuery/jQuery.js"></script>
 </head>
 
 <body class="bg-black container">
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col py-3">
-                <div class="container-fluid">
-                    <div class="row flex-nowrap">
-                        <!-- Left Side Bar -->
-                        <div id="left-side"
-                            class="col-auto col-md-2 col-sm-2 col-lg-3 col-xl-3 border border-dark border-start-0 border-top-0  border-bottom-0">
-                            <div class="d-flex flex-column align-items-start text-white min-vh-100">
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col py-3">
+            <div class="container-fluid">
+                <div class="row flex-nowrap">
+                    <!-- Left Side Bar -->
+                    <div id="left-side"
+                         class="col-auto col-md-2 col-sm-2 col-lg-3 col-xl-3 border border-dark border-start-0 border-top-0  border-bottom-0">
+                        <div class="d-flex flex-column align-items-start text-white min-vh-100">
 
-                                <a href="#" class="mb-3 ms-3">
-                                    <img src="./images/logo.png" alt="" width="30px">
-                                </a>
+                            <a href="#" class="mb-3 ms-3">
+                                <img src="./images/logo.png" alt="" width="30px">
+                            </a>
 
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/home.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Home</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/search.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Explore</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/notification.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Notifications</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/chat.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Messages</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/gork.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Grok</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/lists.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Lists</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/bookmark.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Bookmark</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/communiities.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Communiities</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/premium.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">Premium</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/profile.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">profile</span>
-                                </a>
-                                <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
-                                    <img src="./images/more.png" width="30px" alt="" class="me-2">
-                                    <span class="fs-5 text-light d-none d-lg-inline-block">More</span>
-                                </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/home.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Home</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/search.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Explore</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/notification.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Notifications</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/chat.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Messages</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/gork.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Grok</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/lists.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Lists</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/bookmark.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Bookmark</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/communiities.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Communiities</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/premium.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">Premium</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/profile.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">profile</span>
+                            </a>
+                            <a class="btn rounded-start-5 rounded-end-5 d-block mb-3">
+                                <img src="./images/more.png" width="30px" alt="" class="me-2">
+                                <span class="fs-5 text-light d-none d-lg-inline-block">More</span>
+                            </a>
 
-                                <button type="button"
+                            <button type="button"
                                     class="btn btn-primary rounded-start-5 rounded-end-5 w-75 p-2 fw-bold fs-5 mb-3 d-none d-lg-inline-block">
-                                    Post
-                                </button>
+                                Post
+                            </button>
 
-                                <button type="button" class="btn btn-primary rounded-circle p-3 mb-3 d-lg-none">
-                                    <img src="./images/post.png" width="30px" alt="">
-                                </button>
+                            <button type="button" class="btn btn-primary rounded-circle p-3 mb-3 d-lg-none">
+                                <img src="./images/post.png" width="30px" alt="">
+                            </button>
 
-                                <a
+                            <a
                                     class="btn rounded-start-5 rounded-end-5 align-middle d-flex justify-content-center align-items-start text-start mt-3 w-100">
-                                    <div class="d-inline">
-                                        <img src="./images/assem.jpg" width="40px" alt=""
-                                            class="me-2 rounded-circle float-left">
-                                    </div>
-                                    <div class="d-inline">
-                                        <span class="fs-5 text-light d-none d-lg-inline-block">Assem Ashraf</span>
-                                        <span class="text-light d-none d-lg-inline-block"
-                                            style="font-size: small;">@assemabudeif</span>
-                                    </div>
-                                    <img src="./images/more.png" width="25px" alt=""
-                                        class="me-2 d-none d-lg-inline-block">
+                                <div class="d-inline">
+                                    <img src="./images/user.png" width="40px" alt=""
+                                         class="me-2 rounded-circle float-left">
+                                </div>
+                                <div class="d-inline">
+                                    <span id="name" class="fs-5 text-light d-none d-lg-inline-block"></span>
+                                    <span class="text-light d-none d-lg-inline-block" id="username"
+                                          style="font-size: small;"></span>
+                                </div>
+                                <img src="./images/more.png" width="25px" alt=""
+                                     class="me-2 d-none d-lg-inline-block">
 
-                                </a>
+                            </a>
 
+                        </div>
+                    </div>
+
+                    <!-- Middle Content -->
+                    <main class="col py-3">
+
+                        <!-- Nav Bar -->
+                        <nav
+                                class="navbar navbar-expand-lg border border-dark border-start-0 border-top-0  border-end-0 ">
+                            <div class="px-5 text-light">
+                                <button
+                                        class="btn border border-primary p-3 border-start-0 border-end-0 border-top-0 me-5 text-light rounded-0">
+                                    For You
+                                </button>
+                                <button
+                                        class="btn border border-primary p-3 border-start-0 border-end-0 border-top-0 border-bottom-0 me-5 text-light rounded-0">
+                                    Following
+                                </button>
                             </div>
+                        </nav>
+
+                        <header class="p-4 border border-dark border-start-0 border-top-0  border-end-0 pe-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <img src="./images/assem.jpg" width="50px" height="50px" class="rounded-circle me-3"
+                                     alt="">
+                                <textarea class="form-control" rows="3" cols="50" id="add-post-content"
+                                          placeholder="What is happening?!"></textarea>
+                            </div>
+                            <div id="post-attachment">
+                                <a href="">
+                                    <img src="./images/image.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./images/gif.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./images/list.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <img src="./images/emojy.png" width="20px" class="me-2" alt="">
+                                <a href="">
+                                    <img src="./images/emojy.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./images/calender.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./images/map.png" width="20px" class="me-2" alt="">
+                                </a>
+                                <div class="float-end">
+                                    <button type="button" id="post-tweet"
+                                            class="btn btn-primary rounded-start-5 rounded-end-5 p-2 px-4 float-emnd fw-bold fs-56">
+                                        Post
+                                    </button>
+                                </div>
+                            </div>
+                        </header>
+
+                        <div id="posts"></div>
+                    </main>
+
+                    <!-- Right Side -->
+                    <div
+                            class=" col-auto col-md-3 col-xl-4 px-sm-2 px-0 d-none d-lg-inline-block border border-dark border-end-0 border-top-0 border-bottom-0 text-light">
+                        <input type="search" name="search" id="search"
+                               class="form-control rounded-4 px-3 bg-dark mb-3" placeholder="Search">
+
+
+                        <div class="border border-dark rounded-4 p-3 m-1 mb-4">
+                            <h3 class="h4 fw-bold">
+                                Subscribe to Premium
+                            </h3>
+                            <p class="fs-6 mb-4">
+                                Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+                            </p>
+                            <button type="button" class="btn btn-primary rounded-5">Subscribe</button>
                         </div>
 
-                        <!-- Middle Content -->
-                        <main class="col py-3">
-
-                            <!-- Nav Bar -->
-                            <nav
-                                class="navbar navbar-expand-lg border border-dark border-start-0 border-top-0  border-end-0 ">
-                                <div class="px-5 text-light">
-                                    <button
-                                        class="btn border border-primary p-3 border-start-0 border-end-0 border-top-0 me-5 text-light rounded-0">
-                                        For You
-                                    </button>
-                                    <button
-                                        class="btn border border-primary p-3 border-start-0 border-end-0 border-top-0 border-bottom-0 me-5 text-light rounded-0">
-                                        Following
-                                    </button>
-                                </div>
-                            </nav>
-
-                            <header class="p-4 border border-dark border-start-0 border-top-0  border-end-0 pe-2">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <img src="./images/assem.jpg" width="50px" height="50px" class="rounded-circle me-3"
-                                        alt="">
-                                    <textarea class="form-control" rows="3" cols="50" id="post"
-                                        placeholder="What is happening?!"></textarea>
-                                </div>
-                                <div id="post-attachment">
-                                    <a href="">
-                                        <img src="./images/image.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="./images/gif.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="./images/list.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <img src="./images/emojy.png" width="20px" class="me-2" alt="">
-                                    <a href="">
-                                        <img src="./images/emojy.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="./images/calender.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="./images/map.png" width="20px" class="me-2" alt="">
-                                    </a>
-                                    <div class="float-end">
-                                        <button type="button"
-                                            class="btn btn-primary rounded-start-5 rounded-end-5 p-2 px-4 float-emnd fw-bold fs-56">
-                                            Post
-                                        </button>
-                                    </div>
-                                </div>
-                            </header>
-
-                            <div id="posts"></div>
-                        </main>
-
-                        <!-- Right Side -->
-                        <div
-                            class=" col-auto col-md-3 col-xl-4 px-sm-2 px-0 d-none d-lg-inline-block border border-dark border-end-0 border-top-0 border-bottom-0 text-light">
-                            <input type="search" name="search" id="search"
-                                class="form-control rounded-4 px-3 bg-dark mb-3" placeholder="Search">
-
-
-                            <div class="border border-dark rounded-4 p-3 m-1 mb-4">
-                                <h3 class="h4 fw-bold">
-                                    Subscribe to Premium
-                                </h3>
-                                <p class="fs-6 mb-4">
-                                    Subscribe to unlock new features and if eligible, receive a share of ads revenue.
-                                </p>
-                                <button type="button" class="btn btn-primary rounded-5">Subscribe</button>
-                            </div>
-
-                            <div class="border border-dark rounded-4 p-3 m-1 mb-4">
-                                <h3 class="h4 fw-bold">
-                                    Live on X
-                                </h3>
-                                <p class="fs-6 mb-4">
-                                    Watch live events on X.
-                                </p>
-                                <button type="button" class="btn btn-primary rounded-5">Watch</button>
-                            </div>
+                        <div class="border border-dark rounded-4 p-3 m-1 mb-4">
+                            <h3 class="h4 fw-bold">
+                                Live on X
+                            </h3>
+                            <p class="fs-6 mb-4">
+                                Watch live events on X.
+                            </p>
+                            <button type="button" class="btn btn-primary rounded-5">Watch</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <script>
-                let posts = document.getElementById('posts');
-
-                for (let i = 0; i < 20; i++) {
-                    let post = document.createElement('div');
-                    post.innerHTML = `
-                 <article class="text-white border border-dark border-start-0 border-top-0  border-end-0">
-                                <div class="p-3 ">
-                                    <img src="./images/screenmix.jpg" width="45px" height="45px" 2
-                                        class="rounded-3 me-1 mb-3" alt="">
-                                    <span class="fs-6 fw-bold align-top me-1">Screen Mix</span>
-                                    <span class="fs-7 align-top we-1"
-                                        style="color: rgb(113, 118, 123);">@ScreenMix</span>
-                                    <span class="fs-7 align-top" style="color: rgb(113, 118, 123);">. 3h</span>
-
-                                    <a href="" class="float-end">
-                                        <img src="./images/more.png" width="30px" alt="">
-                                    </a>
-                                </div>
-
-                                <p class="fs-6 mx-5 mb-3">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis accusamus
-                                    cupiditate voluptas animi libero. Non atque quasi dolorum recusandae? Ab quia
-                                    temporibus labore porro consectetur eveniet blanditiis enim numquam accusamus!
-                                </p>
-
-                                <img src="./images/mask.jpg" width="80%"
-                                    class="d-block mx-auto rounded-4 border border-dark" alt="">
-                                <div class="d-flex justify-content-between p-3 tweet-btns mx-5">
-                                    <a href="" class="d-flex p-2 rounded-5" id="btn-comment">
-                                        <img src="./images/comment.png" width="20px" class="me-2" alt="">
-                                        <span class="fs-6">40</span>
-                                    </a>
-                                    <a href="" class="d-flex p-2 rounded-5" id="btn-retweet">
-                                        <img src="./images/retweet.png" width="20px" class="me-2" alt="">
-                                        <span class="fs-6">20</span>
-                                    </a>
-                                    <a href="" class="d-flex p-2 rounded-5" id="btn-like">
-                                        <img src="./images/like.png" width="20px" class="me-2" alt="">
-                                        <span class="fs-6">165</span>
-                                    </a>
-                                    <a href="" class="d-flex p-2 rounded-5" id="btn-views">
-                                        <img src="./images/views.png" width="20px" class="me-2" alt="">
-                                        <span class="fs-6">1k</span>
-                                    </a>
-                                    <div class="float-end d-flex p-2 rounded-5">
-                                        <a href="" id="btn-save" class="me-3 rounded-5">
-                                            <img src="./images/save.png" width="20px" alt="">
-                                        </a>
-                                        <a href="" id="btn-share" class="rounded-5 me-2">
-                                            <img src="./images/share.png" width="20px" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>`;
-                    posts.appendChild(post);
-                }
-            </script>
+<script src="./JS/home.js"></script>
 
 </body>
 
