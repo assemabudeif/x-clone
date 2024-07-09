@@ -104,4 +104,9 @@ $(document).ready(async function () {
             $("#add-post-content").val("");
         }
     });
+
+    $(".btn-logout").click(function () {
+        localStorage.removeItem("currentUser");
+        window.location.href = "index.html";
+    });
 });
